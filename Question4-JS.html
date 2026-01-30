@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Question 4 - JavaScript</title>
-
+    <title>Question 4 - JavaScript - Accessible</title>
+    <style>
+        /* Add visible focus indicator for keyboard users */
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:focus {
+            outline: 3px solid #0066cc;
+            outline-offset: 2px;
+            background-color: #f0f7ff;
+        }
+    </style>
 </head>
 
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover that will output "Hello World":</p>
+    <p>Trigger a function on hover or focus that will output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
+    <!-- Add onfocus for keyboard support -->
+    <button onmouseover="myFunction()" onfocus="myFunction()">Action!</button>
     <p id="demo"></p>
 </body>
 <script>
@@ -18,5 +31,4 @@
         document.getElementById("demo").innerHTML = "Hello World";
     }
 </script>
-
 </html>

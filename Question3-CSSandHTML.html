@@ -2,30 +2,26 @@
 <html lang="en">
 
 <head>
-  <title>Question 3- CSS & HTML</title>
-  <style>
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+  <title>HTML made Easy</title>
+<style>
+/* Fixing the most critical issues: */
+body {
+  background-color: white; /* Light background */
+  color: #222; /* Dark text */
+}
+/* making the button more visible and large*/
+.button {
+  background-color: #1B5E20; /* Darker green */
+  outline: 3px solid #FF6B35; /* Focus indicator */
+  outline-offset: 2px;
+  width: 150px;
+  height: 40px;
+}
 
-    body {
-      padding: 20px;
-      background-color: #2f2f2f;
-    }
-
-    h1, h2, p {
-      color: black;
-    }
-  </style>
+.button:focus {
+  outline: 3px solid #FF6B35;
+}
+</style>
 </head>
 
 <body>
@@ -33,8 +29,7 @@
   <h1>HTML made Easy</h1>
 
   <p>What causes errors in HTML?</p>
-
-  <div class="button">Submit answers</div>
+  <button class="button">Submit answers</button>
 
 </body>
 
